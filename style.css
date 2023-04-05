@@ -1,0 +1,144 @@
+:root{
+    --black: #000000;
+    --darkgrey: #666666;
+    --grey: #979797;
+    --white: #eeeeee;
+
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin:0;
+    padding: 0;
+    font-family:"Garamond";
+}
+
+.logo{
+    color: rgba(237, 237, 237, 0.797);
+}
+
+.container{
+    display: flex;
+}
+
+.dropdown{
+    display: none;
+}
+
+
+nav{
+    color:rgba(237, 237, 237, 0.797);
+    background-color: #1b3441;
+}
+
+nav:hover{
+    background-color: black;
+}
+
+nav ul{
+    list-style-type: none;
+    
+    margin:0;
+    padding:0;
+}
+
+nav ul li{
+    flex:25%;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px;
+    font-weight: bold;
+}
+
+li a, header a{
+    color: inherit;
+    text-decoration: none;
+} 
+
+
+nav ul li:hover{
+    color: white;
+}
+
+
+
+
+.hpimg{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    gap:15px;
+}
+
+
+.hpimg .item {
+    position: relative;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: column;
+    flex:49%;
+    width: 50%;
+}
+.imgsak{
+    width: 100%;
+}
+.imgsak img{
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.anchorbtn{
+    background-color: #244273;
+    border: 1px solid #244273;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 10px 0 #1a2d52;
+}
+
+.anchorbtn:active{
+    box-shadow: none !important;
+    transform: translateY(5px);
+}
+
+
+.header {
+    position: relative;
+    background-image: url(img/unsplash-bg-img.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6); /* grå bakgrund */
+    background-repeat: no-repeat;
+    background-position: center center; 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    font-size: 30px;
+}
+
+.centertext {
+    color: white;
+    position: absolute;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.centertext a{
+    font-weight: none;
+}
+
+@font-face {
+    font-family: "CustomFont";
+    src: url("Fonts/a-otf-shin-go-pro-cufonfonts-webfont/AOTFShinGoProBold.woff"),format("woff");
+}
+
