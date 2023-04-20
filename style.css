@@ -14,7 +14,7 @@ html{
 body{
     margin:0;
     padding: 0;
-    font-family:"Garamond";
+    font-family:sans-serif;
 }
 
 .logo{
@@ -39,7 +39,7 @@ nav:hover{
     background-color: black;
 }
 
-nav ul{
+ul{
     list-style-type: none;
     
     margin:0;
@@ -54,7 +54,7 @@ nav ul li{
     font-weight: bold;
 }
 
-li a, header a{
+a{
     color: inherit;
     text-decoration: none;
 } 
@@ -96,7 +96,7 @@ nav ul li:hover{
 .anchorbtn{
     background-color: #244273;
     border: 1px solid #244273;
-    padding: 10px;
+    padding: 15px;
     border-radius: 20px;
     box-shadow: 0 10px 0 #1a2d52;
 }
@@ -125,20 +125,45 @@ nav ul li:hover{
 }
 
 .centertext {
+    text-align: center;
     color: white;
     position: absolute;
     font-weight: bold;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);  
+    font-size: 20px;
 }
 
-.centertext a{
+.centertext a, .storeaside ul li a{
+    margin: 8px;
+    font-weight:normal;
+    font-size: 20px;
+    font-size: clamp(15px,3vw,20px);
+    color: #244273;
+}
+
+
+.storecontent{
+    margin-left: 269px;
+    margin-right: 269px;
+    display: flex;
+}
+
+.storeheader{
+    margin-top: 50px;
+    flex: 20%;
+    font-size: 40px;
+    font-weight: bold;
+}
+.storeaside{
+    margin-top: 50px;
+    margin-left: 190px;
+    flex: 55%;
+    font-size: 20px;
     font-weight: none;
 }
 
-@font-face {
-    font-family: "CustomFont";
-    src: url("Fonts/a-otf-shin-go-pro-cufonfonts-webfont/AOTFShinGoProBold.woff"),format("woff");
+.storeaside ul li a{
+    margin: 20px;
 }
-
