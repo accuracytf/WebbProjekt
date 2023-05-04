@@ -28,11 +28,12 @@
     background: gray;
 
     transition: all .2s ease;
+    border-radius: 10px;
   }
 
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background:#1b3441;
+    background:#244273;
 }
 
 html{
@@ -67,7 +68,7 @@ nav{
     position: sticky;
     top:0px;
     z-index: 9999;
-   
+    transition: all .3s ease-in-out;
 }
 
 nav:hover{
@@ -85,7 +86,7 @@ nav ul li{
     text-decoration: none;
     display: inline-block;
     padding: 20px;
-    
+    transition: all .2s ease-in-out;
     font-weight: bold;
 }
 
@@ -108,7 +109,7 @@ nav ul li:hover{
     padding: 15px;
     gap:15px;
 }
-header .hpimg{
+header .hpimg, section .hpimg{
     padding: 0;
 }
 
@@ -133,16 +134,17 @@ header .hpimg{
 }
 
 .anchorbtn{
-    background-color: #244273;
+    background-color:transparent;
     border: 1px solid #244273;
     padding: 15px;
+    margin-top: 10px;
     border-radius: 20px;
-    box-shadow: 0 10px 0 #1a2d52;
+    transition: all .2s ease-in-out;
 }
 
-.anchorbtn:active{
-    box-shadow: none !important;
-    transform: translateY(5px);
+.anchorbtn:hover{
+    background-color: #1a2d52;
+    color: #000000;
 }
 
 
@@ -200,7 +202,7 @@ header .hpimg{
     margin-left: 190px;
     flex: 55%;
     font-size: 20px;
-    font-weight: none;
+    font-weight: 0;
 }
 
 .storeaside ul li a{
@@ -212,7 +214,7 @@ header .hpimg{
 
 
 .formcontent{
-    border: top 10px solid black;
+    border-top: 10px solid black;
     align-items: center;
 }
 form{
@@ -251,21 +253,30 @@ input[type="text"]:focus, input[type="text"]:focus{
     height: 200px;
     gap:16px;
     margin-top:100px;
+    
 }
 
-.galleri img{
-    flex:25%;
+.gspan{
+    border: 1px solid black;
     border-radius: 16px;
-    height: 200px;
-    width: auto;
+    flex:25%;
     transition: all .7s ease-in-out;
+    text-align: center;
+    background-color: #000000;
+    color: #eeeeee;
 }
 
-.galleri:hover img{
-    opacity: 0.2;
+.galleri:hover .gspan{
+    opacity: 0.4;
 }
 
-.galleri img:hover{
+.galleri .gspan:hover{
     flex:100%;
     opacity: 1;
+    background-image:url("");
+}
+
+
+@media only screen and (max-width:768px){
+    
 }
